@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Python Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav_header">
+      <img src="https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png" id="logo" alt="python logo">
+      <header>Python Documentation</header></div>
+      <ul>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#Why_Python_Can_Make_Program_Shorter" class="nav-link">Why Python Can Make Program Shorter</a></li>
+        <li><a href="#Prerequisite" class="nav-link">Prerequisite</a></li>
+        <li><a href="#Python_Installation" class="nav-link">Python Installation</a></li>
+        <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+        <li><a href="#Indentation" class="nav-link">Indentation</a></li>
+        <li><a href="#Variables" class="nav-link">Variables</a></li>
+        <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+        <li><a href="#Decision_Making" class="nav-link">Decision Making</a></li>
+        <li><a href="#Reference" class="nav-link">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>If you’re a professional software developer, you may have to work with several C/C++/Java libraries but find the usual write/compile/test/re-compile cycle is too slow. Perhaps you’re writing a test suite for such a library and find writing the testing code a tedious task. Or maybe you’ve written a program that could use an extension language, and you don’t want to design and implement a whole new language for your application.</p>
+          <p>
+            Python is just the language for you.
+          </p>
+          <p>You could write a Unix shell script or Windows batch files for some of these tasks, but shell scripts are best at moving around files and changing text data, not well-suited for GUI applications or games. You could write a C/C++/Java program, but it can take a lot of development time to get even a first-draft program. Python is simpler to use, available on Windows, macOS, and Unix operating systems, and will help you get the job done more quickly.</p>
+          <p>Python is simple to use, but it is a real programming language, offering much more structure and support for large programs than shell scripts or batch files can offer. On the other hand, Python also offers much more error checking than C, and, being a very-high-level language, it has high-level data types built in, such as flexible arrays and dictionaries. Because of its more general data types Python is applicable to a much larger problem domain than Awk or even Perl, yet many things are at least as easy in Python as in those languages.</p>
+          <p>
+            Python is an interpreted language, which can save you considerable time during program development because no compilation and linking is necessary. The interpreter can be used interactively, which makes it easy to experiment with features of the language, to write throw-away programs, or to test functions during bottom-up program development. It is also a handy desk calculator.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Why_Python_Can_Make_Program_Shorter">
+        <header>Why Python Can Make Program Shorter</header>
+        <article>
+          <p>Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:</p>
+          <ul>
+            <li>the high-level data types allow you to express complex operations in a single statement;</li>
+            <li>statement grouping is done by indentation instead of beginning and ending brackets;</li>
+            <li>no variable or argument declarations are necessary.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Prerequisite">
+        <header>Prerequisite</header>
+        <article>
+          <p>Although it is a beginners tutorial, we assume that the readers have a reasonable exposure to any programming environment and knowledge of basic concepts such as variables, commands, syntax, etc.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Python_Installation">
+        <header>Python Installation</header>
+        <article>
+          <p>
+            Many PCs and Macs will have python already installed. To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):
+            <div class="command">C:\Users\Your Name>python --version</div>
+          </p>
+          <p>
+            To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:
+            <div class="command">C:\Users\Your Name>python --version</div>
+          </p>
+          <p>If you find that you do not have Python installed on your computer, then you can download it for free from the following website: <a href="https://www.python.org/">https://www.python.org/</a></p>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <p>
+          There are two major Python versions, Python 2 and Python 3. Python 2 and 3 are quite different. This tutorial uses Python 3, because it more semantically correct and supports newer features.For example, one difference between Python 2 and 3 is the print statement. In Python 2, the "print" statement is not a function, and therefore it is invoked without parentheses. However, in Python 3, it is a function, and must be invoked with parentheses.To print a string in Python 3, just write:
+        </p>
+        <code>print("Hello world!")</code>
+      </section>
+      <section class="main-section" id="Indentation">
+        <header>Indentation</header>
+        <p>Python uses indentation for blocks, instead of curly braces. Both tabs and spaces are supported, but the standard indentation requires standard Python code to use four spaces. For example:</p>
+        <code>x = 1 <br>
+          if x==1:<br>
+          #indented four space<br>
+          <span class="indent-code">print("x is 1")</span>
+        </code>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p>Variables are containers for storing data values. Python has no command for declaring a variable. A variable is created the moment you first assign a value to it. Variable names are case-sensitive.</p>
+          <code>
+            x=5<br>
+            y="Jean"<br>
+            a="hello"<br>
+            A="world"<br>
+            <div class="code-comment">#a will not overwrite A</div> 
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <article>
+          <p>In programming, data type is an important concept. Variables can store data of different types, and different types can do different things.Python has the following data types built-in by default, in these categories:</p>
+          <ul>
+            <li>Numeric types: integer, float, complex</li>
+            <li>Text types: string</li>
+            <li>Sequence types: list, tuples, range</li>
+            <li>Mapping type: dictionary</li>
+            <li>Boolean type: bool</li>
+          </ul>
+          <p>You can get the data type of any object by using this function:</p>
+          <code>x= 5<br>
+          print(type(x))</code>
+        </article>
+      </section>
+      <section class="main-section" id="Decision_Making">
+        <header>Decision Making</header>
+        <article>
+          <p>Decision making is anticipation of conditions occurring while execution of the program and specifying actions taken according to the conditions. Decision structures evaluate multiple expressions which produce TRUE or FALSE as outcome. You need to determine which action to take and which statements to execute if outcome is TRUE or FALSE otherwise.</p>
+          <p>In Python, we can make decision using <em>if else statement</em></p>
+          <code>
+          if expression:<br> 
+          <span class="indent-code">statement(s)</span><br>
+          else:<br>
+            <span class="indent-code">statement(s)</span>
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <p>The content of this page is taken from <a href="https://docs.python.org/3/">Python 3.10.6 Documentation</a>, <a href="https://www.w3schools.com/python/default.asp">W3school</a>, and <a href="https://www.tutorialspoint.com/python/index.htm">Tutorials Point<a></p>
+      </section>
+    </main>
+  </body>
+</html>
